@@ -2,7 +2,7 @@
 ## 步态分析app
 ###一个简单的利用SVM算法实现的训练一个人 走路，跑步，静止，以及手机位置等不同情况下的特征，进行模型训练之后进行分类。
 
-![app](http://img4.duitang.com/uploads/item/201404/20/20140420134721_3crYc.jpeg)
+![app](https://github.com/Warabeta/SVMProj/blob/master/app/src/main/res/mipmap-mdpi/collection.png)
 
 orderd list are created useing ."1." + space
  1.利用手机自带传感器进行数据收集。
