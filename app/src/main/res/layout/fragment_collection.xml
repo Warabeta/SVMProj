@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/milky4"
+    tools:context="smv.lovearthstudio.com.svmproj.fragment.CollectionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="采集样本数据"
+        android:background="#63b8ff"
+        android:textColor="#ffffff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/sp_action"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:entries="@array/Action"
+             />
+
+        <Spinner
+            android:id="@+id/sp_position"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:entries="@array/Position"
+
+            />
+
+        <Spinner
+            android:id="@+id/sp_hz"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:entries="@array/HZ"
+            ></Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_start_collection"
+            style="@style/SvmBtnStyle"
+            android:text="开始采集!"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:background="@mipmap/entrepreneur1"
+            android:layout_height="130dp" />
+
+        <Button
+            android:id="@+id/btn_stop_collection"
+            style="@style/SvmBtnStyle"
+            android:text="停止采集!"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:background="@mipmap/entrepreneur1"
+            android:layout_height="130dp"
+            />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_file_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="舰长，你的姓名？" />
+
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"/>
+</LinearLayout>
